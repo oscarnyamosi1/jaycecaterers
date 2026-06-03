@@ -1,8 +1,8 @@
 kind = "web"
 previewPath = "/"
-title = "Jayce Catering Company"
+title = "Benkiz Catering Company"
 version = "1.0.0"
-id = "artifacts/jayce-catering"
+id = "artifacts/Benkiz-catering"
 router = "path"
 
 [[integratedSkills]]
@@ -15,11 +15,11 @@ paths = [ "/" ]
 localPort = 23141
 
 [services.development]
-run = "pnpm --filter @workspace/jayce-catering run dev"
+run = "pnpm --filter @workspace/Benkiz-catering run dev"
 
 [services.production]
-build = [ "pnpm", "--filter", "@workspace/jayce-catering", "run", "build" ]
-publicDir = "artifacts/jayce-catering/dist/public"
+build = [ "pnpm", "--filter", "@workspace/Benkiz-catering", "run", "build" ]
+publicDir = "artifacts/Benkiz-catering/dist/public"
 serve = "static"
 
 [[services.production.rewrites]]

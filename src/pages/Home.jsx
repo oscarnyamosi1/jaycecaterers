@@ -284,7 +284,7 @@ export default function Home() {
             <motion.span variants={fadeUp} className="text-primary uppercase tracking-[0.3em] text-[10px] font-semibold block mb-4">
               03 — Our Promise
             </motion.span>
-            <motion.h2 variants={fadeUp} className="font-serif text-5xl text-foreground">Why Choose Jayce</motion.h2>
+            <motion.h2 variants={fadeUp} className="font-serif text-5xl text-foreground">Why Choose Benkiz</motion.h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[

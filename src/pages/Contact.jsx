@@ -43,9 +43,9 @@ export default function Contact() {
           className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-24 max-w-6xl mx-auto"
         >
           {[
-            { i: Phone, l: "Call Us", v: "+1 (555) 123-4567" },
-            { i: Mail, l: "Email", v: "hello@jaycecatering.com" },
-            { i: Phone, l: "WhatsApp", v: "+1 (555) 123-4567" },
+            { i: Phone, l: "Call Us", v: "+254 795 404 843" },
+            { i: Mail, l: "Email", v: "benkizbakers@gmail.com" },
+            { i: Phone, l: "WhatsApp", v: "+254 795 404 843" },
             { i: MapPin, l: "Visit", v: "123 Culinary Ave, NY" }
           ].map((item, i) => (
             <motion.div key={i} variants={fadeUp} whileHover={{ y: -4 }} className="glass-card rounded-2xl p-8 text-center flex flex-col items-center group">

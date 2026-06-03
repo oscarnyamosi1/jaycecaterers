@@ -1,17 +1,48 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
+const companyPhone = import.meta.env.VITE_CAOMPANY_PHONE_NUMBER
 
 const stagger = { hidden: {}, visible: { transition: { staggerChildren: 0.1 } } };
 const fadeUp = { hidden: { opacity: 0, y: 28 }, visible: { opacity: 1, y: 0, transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] } } };
-
+const createMessage = ({firstname,lastname,email,eventtype,phonenumber,vision,date})=>{
+  return `Hello Benkiz I would like to make a booking with you. Email : ${email} and number: ${phonenumber}. I want my event (${eventtype}) to be inspired in this way (vision: ${vision} ) on this date (${date})  . Thank you. ~ ${firstname} ${lastname}`
+}
 export default function Booking() {
   const [success, setSuccess] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSuccess(true);
-  };
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(e.currentTarget);
+
+  const firstname = formData.get("firstname");
+  const lastname = formData.get("lastname");
+  const email = formData.get("email");
+  const phonenumber = formData.get("phonenumber");
+  const eventtype = formData.get("eventtype");
+  const date = formData.get("date");
+  const vision = formData.get("vision");
+
+  const message = createMessage({
+    firstname,
+    lastname,
+    email,
+    eventtype,
+    phonenumber,
+    vision,
+    date,
+  });
+
+  const encodedMessage = encodeURIComponent(message);
+
+  window.open(
+    `https://wa.me/${companyPhone}?text=${encodedMessage}`,
+    "_blank"
+  );
+
+  setSuccess(true);
+};
 
   return (
     <div className="bg-background min-h-screen">
@@ -63,15 +94,15 @@ export default function Booking() {
                   <div className="space-y-6">
                     <div className="border-l-2 border-primary pl-4">
                       <p className="text-[10px] uppercase tracking-widest text-muted-foreground font-semibold mb-1">Email</p>
-                      <p className="font-light text-foreground">hello@jaycecatering.com</p>
+                      <p className="font-light text-foreground">benkizbakers@gmail.com</p>
                     </div>
                     <div className="border-l-2 border-primary pl-4">
                       <p className="text-[10px] uppercase tracking-widest text-muted-foreground font-semibold mb-1">Phone</p>
-                      <p className="font-light text-foreground">+1 (555) 123-4567</p>
+                      <p className="font-light text-foreground">+254 795 404 843</p>
                     </div>
                     <div className="border-l-2 border-primary pl-4">
                       <p className="text-[10px] uppercase tracking-widest text-muted-foreground font-semibold mb-1">Office</p>
-                      <p className="font-light text-foreground">123 Culinary Ave<br/>Gourmet District, NY</p>
+                      <p className="font-light text-foreground">Kisii Town<br/>Bosongo Kenya</p>
                     </div>
                   </div>
                 </div>
@@ -106,18 +137,18 @@ export default function Booking() {
               <h2 className="font-serif text-4xl mb-12 text-foreground">Event Details</h2>
               <form className="space-y-10" onSubmit={handleSubmit}>
                 <div className="grid md:grid-cols-2 gap-10">
-                  <input type="text" placeholder="First Name *" className="w-full bg-transparent border-0 border-b border-border pb-3 px-0 text-foreground focus:ring-0 focus:border-foreground transition-colors rounded-none placeholder:text-muted-foreground font-light" required />
-                  <input type="text" placeholder="Last Name *" className="w-full bg-transparent border-0 border-b border-border pb-3 px-0 text-foreground focus:ring-0 focus:border-foreground transition-colors rounded-none placeholder:text-muted-foreground font-light" required />
+                  <input name='firstname' type="text" placeholder="First Name *" className="w-full bg-transparent border-0 border-b border-border pb-3 px-0 text-foreground focus:ring-0 focus:border-foreground transition-colors rounded-none placeholder:text-muted-foreground font-light" required />
+                  <input name='lastname' type="text" placeholder="Last Name *" className="w-full bg-transparent border-0 border-b border-border pb-3 px-0 text-foreground focus:ring-0 focus:border-foreground transition-colors rounded-none placeholder:text-muted-foreground font-light" required />
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-10">
-                  <input type="email" placeholder="Email Address *" className="w-full bg-transparent border-0 border-b border-border pb-3 px-0 text-foreground focus:ring-0 focus:border-foreground transition-colors rounded-none placeholder:text-muted-foreground font-light" required />
-                  <input type="tel" placeholder="Phone Number" className="w-full bg-transparent border-0 border-b border-border pb-3 px-0 text-foreground focus:ring-0 focus:border-foreground transition-colors rounded-none placeholder:text-muted-foreground font-light" />
+                  <input name="email" type="email" placeholder="Email Address *" className="w-full bg-transparent border-0 border-b border-border pb-3 px-0 text-foreground focus:ring-0 focus:border-foreground transition-colors rounded-none placeholder:text-muted-foreground font-light" required />
+                  <input name="phonenumber" type="tel" placeholder="Phone Number" className="w-full bg-transparent border-0 border-b border-border pb-3 px-0 text-foreground focus:ring-0 focus:border-foreground transition-colors rounded-none placeholder:text-muted-foreground font-light" />
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-10">
-                  <input type="date" className="w-full bg-transparent border-0 border-b border-border pb-3 px-0 text-foreground focus:ring-0 focus:border-foreground transition-colors rounded-none font-light" required />
-                  <select className="w-full bg-transparent border-0 border-b border-border pb-3 px-0 text-muted-foreground focus:ring-0 focus:border-foreground transition-colors rounded-none font-light" required>
+                  <input name='date' type="date" className="w-full bg-transparent border-0 border-b border-border pb-3 px-0 text-foreground focus:ring-0 focus:border-foreground transition-colors rounded-none font-light" required />
+                  <select name="eventtype" className="w-full bg-transparent border-0 border-b border-border pb-3 px-0 text-muted-foreground focus:ring-0 focus:border-foreground transition-colors rounded-none font-light" required>
                     <option value="">Event Type *</option>
                     <option value="wedding">Wedding</option>
                     <option value="corporate">Corporate</option>
@@ -126,7 +157,7 @@ export default function Booking() {
                 </div>
 
                 <div>
-                  <textarea placeholder="Tell us about your vision..." rows={4} className="w-full bg-transparent border-0 border-b border-border pb-3 px-0 text-foreground focus:ring-0 focus:border-foreground transition-colors rounded-none placeholder:text-muted-foreground font-light resize-none"></textarea>
+                  <textarea name='vision' placeholder="Tell us about your vision..." rows={4} className="w-full bg-transparent border-0 border-b border-border pb-3 px-0 text-foreground focus:ring-0 focus:border-foreground transition-colors rounded-none placeholder:text-muted-foreground font-light resize-none"></textarea>
                 </div>
 
                 <motion.button 

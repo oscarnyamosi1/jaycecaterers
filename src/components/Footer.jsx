@@ -10,7 +10,7 @@ export default function Footer() {
         {/* Brand header */}
         <div className="border-b border-white/10 pb-12 mb-12 flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div>
-            <h2 className="font-serif text-5xl md:text-6xl text-white mb-3">JAYCE</h2>
+            <h2 className="font-serif text-5xl md:text-6xl text-white mb-3">Benkiz</h2>
             <p className="font-serif text-xs tracking-[0.4em] text-primary uppercase">Catering Company</p>
           </div>
           <p className="text-white/50 font-light max-w-xs leading-relaxed text-sm">
@@ -41,15 +41,15 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-white/70 text-sm font-light">
                 <MapPin size={14} className="text-primary shrink-0 mt-0.5" />
-                <span>Your Business Address</span>
+                <span>Kisii Mwembe,Homabay Town</span>
               </li>
               <li className="flex items-center gap-3 text-white/70 text-sm font-light">
                 <Phone size={14} className="text-primary shrink-0" />
-                <span>+XXX XXX XXX XXX</span>
+                <span>+254 795 404 843 / +254 707 091 550</span>
               </li>
               <li className="flex items-center gap-3 text-white/70 text-sm font-light">
                 <Mail size={14} className="text-primary shrink-0" />
-                <span>info@jaycecatering.com</span>
+                <span>benkizbakers@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -77,7 +77,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/30 text-xs font-light">
-            &copy; {new Date().getFullYear()} Jayce Catering Company. All rights reserved.
+            &copy; {new Date().getFullYear()} Benkiz Catering Company. All rights reserved.
           </p>
           <Link href="/booking">
             <span className="text-primary text-xs uppercase tracking-widest font-medium hover:underline cursor-pointer">

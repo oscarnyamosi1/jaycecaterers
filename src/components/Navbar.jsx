@@ -51,7 +51,7 @@ export default function Navbar() {
               whileTap={{ scale: 0.98 }}
             >
               <span className={`font-sans text-2xl font-bold tracking-tight ${isScrolled ? "text-foreground" : "text-white"}`}>
-                JAYCE
+                Benkiz
               </span>
               <span className={`font-serif text-[0.6rem] tracking-[0.35em] mt-0.5 ${isScrolled ? "text-primary" : "text-white/70"}`}>
                 CATERING

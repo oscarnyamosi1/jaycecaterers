@@ -13,14 +13,14 @@ export default function About() {
         <div className="absolute inset-0">
           <img 
             src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1600&q=80" 
-            alt="About Jayce" 
+            alt="About Benkiz" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/70" />
         </div>
         <div className="relative z-10 text-center pt-40 pb-28 px-4 flex flex-col items-center">
           <span className="text-primary uppercase tracking-[0.3em] text-[10px] font-semibold block mb-4">Discover</span>
-          <h1 className="font-serif text-5xl md:text-7xl text-white mb-6">About Jayce</h1>
+          <h1 className="font-serif text-5xl md:text-7xl text-white mb-6">About Benkiz</h1>
           <p className="text-white/60 font-light text-lg">A legacy built on passion, precision, and people</p>
         </div>
       </section>
@@ -38,9 +38,9 @@ export default function About() {
         </motion.div>
         <motion.div variants={stagger} className="space-y-6">
           <motion.span variants={fadeUp} className="text-primary uppercase tracking-[0.3em] text-[10px] font-semibold block mb-4">01 — Our Story</motion.span>
-          <motion.h2 variants={fadeUp} className="font-serif text-4xl lg:text-5xl text-foreground">The Jayce Philosophy</motion.h2>
+          <motion.h2 variants={fadeUp} className="font-serif text-4xl lg:text-5xl text-foreground">The Benkiz Philosophy</motion.h2>
           <motion.p variants={fadeUp} className="text-muted-foreground font-light leading-relaxed text-lg">
-            Founded on the belief that every event deserves to be memorable, Jayce Catering Company has been redefining culinary experiences for over a decade. Our journey started with a simple passion for bringing people together over exceptional food.
+            Founded on the belief that every event deserves to be memorable, Benkiz Catering Company has been redefining culinary experiences for over a decade. Our journey started with a simple passion for bringing people together over exceptional food.
           </motion.p>
           <motion.p variants={fadeUp} className="text-muted-foreground font-light leading-relaxed text-lg">
             We believe that food is more than sustenance—it is an art form, a conversation starter, and a way to forge lasting connections. Our approach marries classical techniques with modern, editorial presentation, ensuring that every dish tells a story.
