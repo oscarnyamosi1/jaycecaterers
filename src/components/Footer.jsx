@@ -56,8 +56,10 @@ export default function Footer() {
           <div>
             <h4 className="text-[11px] uppercase tracking-widest text-white/40 font-medium mb-5">Follow Us</h4>
             <div className="flex flex-col gap-3">
-              {[{icon:Facebook,label:"Facebook"},{icon:Instagram,label:"Instagram"},{icon:Linkedin,label:"LinkedIn"}].map(({icon:Icon,label})=>(
-                <a key={label} href="#" className="flex items-center gap-3 text-white/70 hover:text-primary text-sm font-light transition-colors group">
+              {[{icon:Facebook,label:"Facebook",link:"https://www.facebook.com/people/Benkiz-Kitchen-and-Bites/61578599433460/#"},
+              {icon:Instagram,label:"Instagram",link:"#"},
+              {icon:Linkedin,label:"LinkedIn",link:"#"}].map(({icon:Icon,label,link})=>(
+                <a key={label} href={link} target="_blank" className="flex items-center gap-3 text-white/70 hover:text-primary text-sm font-light transition-colors group">
                   <span className="w-7 h-7 rounded-full border border-white/15 flex items-center justify-center group-hover:border-primary transition-colors">
                     <Icon size={12} />
                   </span>

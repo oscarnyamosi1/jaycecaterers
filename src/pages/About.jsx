@@ -43,7 +43,7 @@ export default function About() {
             Founded on the belief that every event deserves to be memorable, Benkiz Catering Company has been redefining culinary experiences for over a decade. Our journey started with a simple passion for bringing people together over exceptional food.
           </motion.p>
           <motion.p variants={fadeUp} className="text-muted-foreground font-light leading-relaxed text-lg">
-            We believe that food is more than sustenance—it is an art form, a conversation starter, and a way to forge lasting connections. Our approach marries classical techniques with modern, editorial presentation, ensuring that every dish tells a story.
+            We believe that food is more than sustenance — it is an art form, a conversation starter, and a way to forge lasting connections. Our approach marries classical techniques with modern, editorial presentation, ensuring that every dish tells a story.
           </motion.p>
         </motion.div>
       </motion.section>
@@ -68,7 +68,7 @@ export default function About() {
             <div className="w-12 h-0.5 bg-primary mb-6" />
             <h3 className="font-serif text-3xl mb-4 text-foreground">Our Vision</h3>
             <p className="text-muted-foreground font-light leading-relaxed text-lg">
-              To be the premier standard for luxury catering, constantly innovating and pushing the boundaries of flavor, presentation, and hospitality in every dish we serve.
+              To be the premier standard for luxury catering and baking, constantly innovating and pushing the boundaries of flavor, presentation, and hospitality in every dish we serve.
             </p>
           </motion.div>
         </motion.div>
@@ -84,9 +84,9 @@ export default function About() {
           className="container mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-12 text-center"
         >
           {[
-            { n: "10+", l: "Years" },
-            { n: "500+", l: "Events" },
-            { n: "50", l: "Chefs" },
+            { n: "6+", l: "Years" },
+            { n: "300+", l: "Events" },
+            { n: "30", l: "Chefs" },
             { n: "98%", l: "Happy Clients" }
           ].map((s, i) => (
             <motion.div key={i} variants={fadeUp}>
