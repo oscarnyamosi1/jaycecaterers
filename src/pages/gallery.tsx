@@ -17,7 +17,26 @@ const IMAGES = [
   { id: 8, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538205/IMG-20260615-WA0063_dymnhy.jpg`, category: "Events", title: "Signature Wedding Setup" },
   { id: 9, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538220/IMG-20260615-WA0086_jiiep0.jpg`, category: "Events", title: "Event Coverage" },
   { id: 10, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538205/IMG-20260615-WA0062_ofuwhk.jpg`, category: "Events", title: "Event Coverage" },
-  { id: 11, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538205/IMG-20260615-WA0061_ouzl8l.jpg`, category: "Events", title: "Event Coverage" }
+  { id: 11, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538205/IMG-20260615-WA0061_ouzl8l.jpg`, category: "Events", title: "Event Coverage" },
+  { id: 12, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538204/IMG-20260615-WA0057_dvypci.jpg`, category: "Events", title: "Event Setup" },
+  { id: 13, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538204/IMG-20260615-WA0058_rrqtvt.jpg`, category: "Food", title: "Appetizer" },
+  { id: 14, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538202/IMG-20260615-WA0056_zppmin.jpg`, category: "Events", title: "Event Coverage" },
+  { id: 15, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538202/IMG-20260615-WA0053_vj8t3u.jpg`, category: "Food", title: "Appetizer" },
+  { id: 16, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538199/IMG-20260615-WA0052_dqqn0m.jpg`, category: "Food", title: "Premium Buffet" },
+  { id: 17, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538199/IMG-20260615-WA0054_uhw2mm.jpg`, category: "Food", title: "Choma" },
+  { id: 18, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538199/IMG-20260615-WA0028_dyxctb.jpg`, category: "Events", title: "Corporate Event Setup" },
+  { id: 19, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538197/IMG-20260615-WA0032_lndxzt.jpg`, category: "Personell", title: "The Chef" },
+  { id: 20, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538192/IMG-20260615-WA0022_itzigs.jpg`, category: "Activity", title: "Grilling" },
+  { id: 21, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538192/IMG-20260615-WA0025_hr82yt.jpg`, category: "Activity", title: "Grilling" },
+  { id: 22, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538191/IMG-20260615-WA0027_oikuco.jpg`, category: "Food", title: "Bakes" },
+  { id: 23, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538188/IMG-20260615-WA0024_z1fi2v.jpg`, category: "Food", title: "BBQ" },
+  { id: 24, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538187/IMG-20260615-WA0026_cpu0pt.jpg`, category: "Food", title: "Bakes" },
+  { id: 25, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538183/IMG-20260615-WA0021_kki6qe.jpg`, category: "Food", title: "Manadazi" },
+  { id: 26, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538178/IMG-20260615-WA0020_kwgjpp.jpg`, category: "Food", title: "Bakes" },
+  { id: 27, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538177/IMG-20260615-WA0019_chokmx.jpg`, category: "Food", title: "Bakes" },
+  { id: 28, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538174/IMG-20260615-WA0014_fmbmeu.jpg`, category: "Food", title: "Appetizer" },
+  { id: 29, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538173/IMG-20260615-WA0016_emgyxh.jpg`, category: "Food", title: "Appetizer" },
+  { id: 30, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538170/IMG-20260615-WA0017_rlnuqy.jpg`, category: "Food", title: "Appetizer" },
 ];
 
 export default function GalleryPage() {

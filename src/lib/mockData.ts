@@ -58,7 +58,7 @@ export const MOCK_USERS = [
 ]
 
 
-export const MENU_ITEMS = [
+export const MENU_ITEMS_OLD = [
   { id: 1, name: "All sorts of Pilau", category: "Mains", price: "Shs 2800", description: "Pilau origi ya kikwetu.", tags: ["gluten-free"], img: "https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538228/IMG-20260615-WA0087_unb6ju.jpg" },
   { id: 2, name: "Nyama Choma", category: "Appetizers", price: "Shs 3200", description: "(Nyam Chom) Grilled Steak / BBQ (Berbeque)  .", tags: ["halal"], img: "https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538208/IMG-20260615-WA0069_xwgo6r.jpg" },
   { id: 3, name: "Vegetable Rice", category: "Mains", price: "Shs 4500", description: "Pilau with a variety of vegetables.", tags: ["halal", "gluten-free"], img: "https://res.cloudinary.com/dw0l7b86h/image/upload/v1780941161/unnamed_7_gw27ih.jpg" },
@@ -68,6 +68,107 @@ export const MENU_ITEMS = [
   { id: 7, name: "Pumpkin Chapati", category: "Dessert", price: "Shs 2200", description: "Silky smooth and soft chapatis.", tags: ["gluten-free", "vegetarian"], img: "https://res.cloudinary.com/dw0l7b86h/image/upload/v1780940999/unnamed_9_srdtfb.jpg" },
   { id: 8, name: "Signature Wedding Cakes", category: "Main", price: "Ksh1200", description: "Cake for all events (Birthday,Wedding,Graduation,Official Events etc).", tags: ["Cake", "Fondant","Whipped Cream"], img: "https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538241/IMG-20260615-WA0094_tlw8hr.jpg" },
   { id: 9, name: "Brown Ugali", category: "Mains", price: "Ksh 1500", description: "Made with traditional mtama flour .", tags: ["gluten-free"], img: "https://res.cloudinary.com/dw0l7b86h/image/upload/v1780941001/unnamed_13_rhsd3o.jpg" }
+];
+
+export const MENU_ITEMS = [
+  {
+    id: 1,
+    name: "Serving Point 1",
+    category: "Mains",
+    price: "Custom",
+    description:
+      "Beef stew, Bean stew, Matumbo wet fry, Managu, Cabbage, Vegetable rice, White/Brown ugali, Chapati, Water, Soda, Watermelon.",
+    tags: ["Lunch", "Traditional", "Buffet"],
+    img: "https://res.cloudinary.com/dw0l7b86h/image/upload/v1780941161/unnamed_7_gw27ih.jpg"
+  },
+
+  {
+    id: 2,
+    name: "Serving Point 2",
+    category: "Mains",
+    price: "Custom",
+    description:
+      "Beef stew, Goat dry fry, Bean stew, Chicken kienyeji, Managu, Chinsaga, Steamed cabbage, Vegetable rice, Roasted potatoes, Ugali, Chapati, Watermelon, Pineapple, Water, Soda.",
+    tags: ["Buffet", "Premium", "Lunch"],
+    img: "https://res.cloudinary.com/dw0l7b86h/image/upload/v1780941006/unnamed_6_hwhemh.jpg"
+  },
+
+  {
+    id: 3,
+    name: "Serving Point 3",
+    category: "Mains",
+    price: "Premium",
+    description:
+      "Salads, Kachumbari, Coleslaw, Pineapple raisin, Butter chicken, Creamed beef stew, Grilled chicken, Beef stew, Goat dry fry, Choma goat, Ndengu in coconut.",
+    tags: ["Premium", "Event", "Buffet"],
+    img: "https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538208/IMG-20260615-WA0069_xwgo6r.jpg"
+  },
+
+  {
+    id: 4,
+    name: "Dinner Buffet (6PM)",
+    category: "Mains",
+    price: "Package",
+    description:
+      "Beef stew, Bean stew, Matumbo wet fry, Managu, Cabbage, Vegetable rice, Ugali, Chapati, Water, Watermelon.",
+    tags: ["Dinner", "Buffet"],
+    img: "https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538228/IMG-20260615-WA0087_unb6ju.jpg"
+  },
+
+  {
+    id: 5,
+    name: "Evening Tea (10PM)",
+    category: "Beverages",
+    price: "Package",
+    description:
+      "Fresh assorted tea selection.",
+    tags: ["Tea", "Refreshments"],
+    img: "https://res.cloudinary.com/dw0l7b86h/image/upload/v1781549761/mango_smoothie_v8pzeh.jpg"
+  },
+
+  {
+    id: 6,
+    name: "Breakfast (7AM)",
+    category: "Breakfast",
+    price: "Package",
+    description:
+      "Tea and freshly prepared mandazi.",
+    tags: ["Breakfast", "Tea"],
+    img: "https://res.cloudinary.com/dw0l7b86h/image/upload/v1780940999/unnamed_9_srdtfb.jpg"
+  },
+
+  {
+    id: 7,
+    name: "Lunch Buffet (10AM–12PM)",
+    category: "Mains",
+    price: "Package",
+    description:
+      "Beef stew, Goat dry fry, Bean stew, Chicken kienyeji, Managu, Chinsaga, Steamed cabbage, Vegetable rice, Roasted potatoes, Ugali, Chapati, Watermelon, Water.",
+    tags: ["Lunch", "Buffet"],
+    img: "https://res.cloudinary.com/dw0l7b86h/image/upload/v1780941001/unnamed_13_rhsd3o.jpg"
+  },
+
+  {
+    id: 8,
+    name: "Premium Buffet Selection",
+    category: "Mains",
+    price: "Premium",
+    description:
+      "Salads, Kachumbari, Coleslaw, Pineapple raisin, Grilled chicken, Chicken wet fry, Beef stew, Goat dry fry, Choma goat, Ndengu in coconut, Soda.",
+    tags: ["Premium", "Special Events"],
+    img: "https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538241/IMG-20260615-WA0094_tlw8hr.jpg"
+  },
+
+  {
+    id: 9,
+    name: "Evening Tea Snacks",
+    category: "Beverages",
+    price: "Package",
+    description:
+      "Assorted tea, mandazi and beef samosa.",
+    tags: ["Tea", "Snacks"],
+    img: "https://res.cloudinary.com/dw0l7b86h/image/upload/v1781549099/Recipe__Kenyan_Matoke_Green_Banana_Stew_lirz43.jpg"
+  }
 ];
 
 export const SERVICES = [
