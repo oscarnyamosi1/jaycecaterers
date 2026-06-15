@@ -16,6 +16,7 @@ export default function Loader() {
   return (
     <div id="loader">
     
+      <img src="https://res.cloudinary.com/dw0l7b86h/image/upload/v1780993490/logo_ojm8gr.webp" alt="Benkiz Logo" />
       <div className="loader-logo">
         Benkiz <span>Events & Caterers.</span>
       </div>

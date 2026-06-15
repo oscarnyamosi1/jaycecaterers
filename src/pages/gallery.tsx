@@ -7,14 +7,17 @@ const CLOUDINARY_URL = import.meta.env.VITE_CLOUDINARY_URL;
 const CATEGORIES = ["All", "Events", "Food", "Venues"];
 
 const IMAGES = [
-  { id: 1, src: "/images/hero.jpg", category: "Events", title: "Gala Dinner Setup" },
-  { id: 2, src: `${CLOUDINARY_URL}/wedding_qoa5tx.jpg`, category: "Venues", title: "Outdoor Reception" },
-  { id: 3, src: `${CLOUDINARY_URL}/corporate_fjolag.jpg`, category: "Events", title: "Corporate Buffet" },
-  { id: 4, src: `${CLOUDINARY_URL}/dish-stew_lmh6cd.jpg`, category: "Food", title: "Slow Braised Stew" },
-  { id: 5, src: `${CLOUDINARY_URL}/unnamed_4_tuk9az.jpg`, category: "Food", title: "Appetizer" },
-  { id: 6, src: `${CLOUDINARY_URL}/unnamed_3_gfoeca.jpg`, category: "Venues", title: "Intimate Dining" },
-  { id: 7, src: `${CLOUDINARY_URL}/unnamed_11_oamiov.jpg`, category: "Food", title: "Artisanal Dessert" },
-  { id: 8, src: `${CLOUDINARY_URL}/unnamed_12_q7qjxj.jpg`, category: "Food", title: "Signature Drinks" },
+  { id: 1, src: "https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538237/IMG-20260615-WA0096_xu0yp5.jpg", category: "Events", title: "Gala Dinner Setup" },
+  { id: 2, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538234/IMG-20260615-WA0093_qu9jed.jpg`, category: "Venues", title: "Outdoor Reception" },
+  { id: 3, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538218/IMG-20260615-WA0085_ckvtpk.jpg`, category: "Events", title: "Corporate Buffet" },
+  { id: 4, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538218/IMG-20260615-WA0088_wgocmu.jpg`, category: "Food", title: "Slow Braised Stew" },
+  { id: 5, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538213/IMG-20260615-WA0075_mlh4k0.jpg`, category: "Food", title: "Appetizer" },
+  { id: 6, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538208/IMG-20260615-WA0066_hkqrnv.jpg`, category: "Venues", title: "Intimate Dining" },
+  { id: 7, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538206/IMG-20260615-WA0060_osr7tp.jpg`, category: "Food", title: "Artisanal Dessert" },
+  { id: 8, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538205/IMG-20260615-WA0063_dymnhy.jpg`, category: "Events", title: "Signature Wedding Setup" },
+  { id: 9, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538220/IMG-20260615-WA0086_jiiep0.jpg`, category: "Events", title: "Event Coverage" },
+  { id: 10, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538205/IMG-20260615-WA0062_ofuwhk.jpg`, category: "Events", title: "Event Coverage" },
+  { id: 11, src: `https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538205/IMG-20260615-WA0061_ouzl8l.jpg`, category: "Events", title: "Event Coverage" }
 ];
 
 export default function GalleryPage() {

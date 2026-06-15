@@ -31,7 +31,7 @@ export default function AboutPage() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="glass p-2 rounded-[2rem] relative"
           >
-            <img src={`${imagePrefix}/benkiz_fq0qeh.jpg` } alt="Our culinary approach" className="rounded-[1.5rem] w-full aspect-square md:aspect-[4/5] object-cover" />
+            <img src={`https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538196/IMG-20260615-WA0031_apsxwp.jpg` } alt="Our culinary approach" className="rounded-[1.5rem] w-full aspect-square md:aspect-[4/5] object-cover" />
           </motion.div>
 
         <motion.div 
@@ -40,7 +40,7 @@ export default function AboutPage() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="glass p-2 rounded-[2rem] relative"
           >
-            <img src={`${imagePrefix}/benkiz2_i4tkyw.jpg` } alt="mr . benkiz" className="rounded-[1.5rem] w-full aspect-square md:aspect-[4/5] object-cover" />
+            <img src={`https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538191/IMG-20260615-WA0030_yvzm4a.jpg` } alt="mr . benkiz" className="rounded-[1.5rem] w-full aspect-square md:aspect-[4/5] object-cover" />
           </motion.div>
 
                   <motion.div 
@@ -49,7 +49,7 @@ export default function AboutPage() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="glass p-2 rounded-[2rem] relative"
           >
-            <img src={'/images/hero.jpg' }alt="mr . benkiz" className="rounded-[1.5rem] w-full aspect-square md:aspect-[4/5] object-cover" />
+            <img src={'https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538159/IMG-20260615-WA0004_ns5a78.jpg' } alt="mr . benkiz" className="rounded-[1.5rem] w-full aspect-square md:aspect-[4/5] object-cover" />
           </motion.div>
         </div>
       </section>
