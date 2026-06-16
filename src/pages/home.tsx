@@ -17,6 +17,7 @@ export default function Home() {
             src="https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538225/IMG-20260615-WA0089_djy9qo.jpg" 
             alt="Upscale African Catering Event" 
             className="w-full h-full object-cover"
+            loading="lazy"  
           />
           <div className="absolute inset-0 bg-black/50" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
@@ -61,7 +62,7 @@ export default function Home() {
               className="relative"
             >
               <div className="aspect-[4/5] rounded-3xl overflow-hidden glass-card-round p-2 relative z-10">
-                <img src="https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538241/IMG-20260615-WA0094_tlw8hr.jpg" alt="Fine dining table" className="w-full h-full object-cover rounded-[calc(var(--radius)+4px)]" />
+                <img src="https://res.cloudinary.com/dw0l7b86h/image/upload/v1781538241/IMG-20260615-WA0094_tlw8hr.jpg" alt="Fine dining table" className="w-full h-full object-cover rounded-[calc(var(--radius)+4px)]" loading='lazy'/>
               </div>
               <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-primary/20 rounded-full blur-3xl -z-10" />
             </motion.div>
@@ -108,7 +109,7 @@ export default function Home() {
               >
                 <div className="glass-card overflow-hidden rounded-3xl h-full flex flex-col">
                   <div className="aspect-[4/3] w-full overflow-hidden">
-                    <img src={service.img} alt={service.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    <img src={service.img} alt={service.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
                   </div>
                   <div className="p-8 flex-1 flex flex-col">
                     <h3 className="font-serif text-2xl mb-3">{service.title}</h3>
@@ -148,7 +149,7 @@ export default function Home() {
                 className="glass-card p-4 rounded-3xl flex flex-col group cursor-pointer"
               >
                 <div className="aspect-square rounded-2xl overflow-hidden mb-4">
-                  <img src={item.img} alt={item.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src={item.img} alt={item.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
                 </div>
                 <div className="px-2 pb-2">
                   <span className="text-xs font-medium text-primary uppercase tracking-wider mb-2 block">{item.category}</span>

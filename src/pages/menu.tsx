@@ -134,6 +134,7 @@ export default function MenuPage() {
                   <img
                     src={item.img}
                     alt={item.name}
+                    loading="lazy"
                     className="w-full h-full object-cover hover:scale-105 transition duration-700"
                   />
 

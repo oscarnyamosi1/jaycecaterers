@@ -88,6 +88,7 @@ export default function GalleryPage() {
                 <img 
                   src={img.src} 
                   alt={img.title} 
+                  loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center p-4">
@@ -114,6 +115,7 @@ export default function GalleryPage() {
                 src={selectedImg.src} 
                 alt={selectedImg.title} 
                 className="max-w-full max-h-full object-contain rounded-lg"
+                loading='lazy'
               />
               <div className="absolute bottom-6 left-6 right-6 bg-black/50 backdrop-blur-md text-white p-4 rounded-xl text-center">
                 <h3 className="font-serif text-2xl">{selectedImg.title}</h3>
