@@ -23,6 +23,9 @@ import SuperAdminDashboard from "@/pages/dashboards/SuperAdminDashboard";
 
 import NotFound from "@/pages/not-found";
 
+
+import CateringKisii from "@/pages/CateringKisii";
+
 const queryClient = new QueryClient();
 
 // Auth Guard for Dashboards
@@ -52,6 +55,7 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={() => <Layout><Home /></Layout>} />
+      <Route path="/catering-kisii" component={() => <Layout><CateringKisii /></Layout>} />
       <Route path="/menu" component={() => <Layout><MenuPage /></Layout>} />
       <Route path="/services" component={() => <Layout><ServicesPage /></Layout>} />
       <Route path="/about" component={() => <Layout><AboutPage /></Layout>} />

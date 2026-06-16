@@ -45,6 +45,10 @@ export default function Home() {
               <Button size="lg" variant="outline" className="rounded-full px-8 text-base h-14 bg-white/10 backdrop-blur-md border-white/20 text-white hover:bg-white/20" asChild>
                 <Link href="/menu">Explore Menu</Link>
               </Button>
+
+              <a href="/catering-kisii" className="text-white hover:text-primary transition-colors">
+                Catering Services in Kisii
+              </a>
             </div>
           </motion.div>
         </div>
